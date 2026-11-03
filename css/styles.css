@@ -440,3 +440,17 @@ body {
 .event{
     text-align: center;
 }
+.btn-cerrar-sesion {
+    padding: 0.48rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--color-blanco);
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.btn-cerrar-sesion:hover {
+    background: var(--color-blanco);
+    color: var(--color-azul);
+}
