@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos | Plataforma de Eventos</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
-        <a href="../index.html">Plataforma de Eventos</a>
+        <header class="barra-navegacion">
+        <div class="contenedor nav-contenido">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon" aria-hidden="true">✦</span>
+                Plataforma de Eventos
+            </a>
+            <nav class="enlaces-nav" aria-label="Navegación principal">
+                <a href="#lista-eventos">Eventos</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="../index.html">Plataforma de Eventos</a>
+                <button type="button" id="cerrar-sesion" class="btn-cerrar-sesion">Cerrar sesión</button>
+            </nav>
+        </div>
     </header>
-
+        
     <main>
-        <h1>Eventos</h1>
-        <button type="button" id="cerrar-sesion">Cerrar sesión</button>
-        <!-- Aquí se agregará el contenido de eventos. -->
+        <h1 class="event">Eventos</h1>
     </main>
+
     <script src="../js/eventos.js"></script>
 </body>
 </html>
