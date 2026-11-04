@@ -10,11 +10,18 @@ const campoContrasena = document.querySelector("#contrasena");
 const mensajeLogin = document.querySelector("#mensaje-login");
 
 formularioLogin.addEventListener("submit", (evento) => {
-    // Evita que el navegador recargue la página al enviar el formulario.
+
     evento.preventDefault();
+
+    mensajeLogin.textContent = "";
 
     const usuarioIngresado = campoUsuario.value.trim();
     const contrasenaIngresada = campoContrasena.value;
+
+    if (usuarioIngresado === "" || contrasenaIngresada === "") {
+        mensajeLogin.textContent = "Por favor, completa todos los campos.";
+        return;
+    }
 
     if (
         usuarioIngresado === credencialesDemo.usuario &&
@@ -26,6 +33,6 @@ formularioLogin.addEventListener("submit", (evento) => {
     }
 
     mensajeLogin.textContent = "El usuario o la contraseña son incorrectos. Inténtalo de nuevo.";
-    campoContrasena.value = "";
+
     campoContrasena.focus();
 });

@@ -22,7 +22,9 @@ body {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -85,8 +87,9 @@ body {
 
 /* Sección Hero */
 .hero {
-    background-image: linear-gradient(rgba(13, 110, 253, 0.3), rgba(13, 110, 253, 0.5)), /* esta linea coloca una capa translucida encima de la imagen, siempre debe de tener un punto de incio y uno de final */
-                      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWSQnMICiFpOINLqC_eJxSHzb74eupVna0JXjwhDPcKQAev7jSPXyRi8&s=10');
+    background-image: linear-gradient(rgba(13, 110, 253, 0.3), rgba(13, 110, 253, 0.5)),
+        /* esta linea coloca una capa translucida encima de la imagen, siempre debe de tener un punto de incio y uno de final */
+        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWSQnMICiFpOINLqC_eJxSHzb74eupVna0JXjwhDPcKQAev7jSPXyRi8&s=10');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -365,14 +368,16 @@ body {
     background-color: #172554;
 }
 
+/* Mensajes de error del inicio de sesión */
 .mensaje-login {
     display: none;
     margin-bottom: 18px;
     padding: 12px 14px;
-    border: 1px solid var(--color-verde-exito);
+    border: 1px solid #fecaca;
     border-radius: 7px;
-    background: var(--color-fondo-exito);
-    color: var(--color-verde-exito);
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 0.92rem;
     line-height: 1.45;
 }
 
@@ -436,9 +441,10 @@ body {
 }
 
 /*Pagina de Eventos*/
-.event{
+.event {
     text-align: center;
 }
+
 .btn-cerrar-sesion {
     padding: 0.48rem 1rem;
     border: 1px solid rgba(255, 255, 255, 0.75);
@@ -449,10 +455,12 @@ body {
     font-size: 0.9rem;
     cursor: pointer;
 }
+
 .btn-cerrar-sesion:hover {
     background: var(--color-blanco);
     color: var(--color-azul);
 }
+
 .encabezado-eventos {
     padding: 56px 0 48px;
     background: linear-gradient(135deg, var(--color-azul), #2563eb);
@@ -472,10 +480,11 @@ body {
     font-size: clamp(2rem, 5vw, 2.8rem);
 }
 
-.encabezado-eventos .contenedor > p:last-child {
+.encabezado-eventos .contenedor>p:last-child {
     margin: 0;
     color: #e0e7ff;
 }
+
 .tarjeta-evento {
     overflow: hidden;
     border: 1px solid #e2e8f0;
